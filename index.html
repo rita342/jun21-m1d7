@@ -7,30 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jun21-M1D7</title>
     <style>
-        html {
-            font-family: sans-serif;
-            color: rgb(122, 36, 36);
-        }
-        
         body {
-            background-color: rgb(248, 239, 232);
-            width: 1000px;
+            background-color: #f7deca;
+            width: 600px;
         }
         
         h1 {
             font-size: 30px;
+            color: chocolate;
         }
         
         table,
         th,
         td {
-            border: 1px solid black;
+            border: solid black;
             color: black;
         }
         
         tbody,
         td {
-            border: 1px solid rgb(78, 23, 228);
+            border: 1px rgb(193, 175, 245);
             color: black;
             font-size: 10px;
         }
@@ -39,6 +35,11 @@
         p {
             color: black;
             font-size: 15px;
+        }
+        
+        td img {
+            height: 200px;
+            width: 200px;
         }
     </style>
 </head>
@@ -60,20 +61,19 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT1onHcFTDLSJtTGKov4vyuYw_SCsRT9FsgVHfomZKTyHA76GQf3H1dlRDxcFS8o0mbDc3O9Y0WNcoP&usqp=CAc" alt="" height='100' width='50' /></td>
-                <td><img src="https://images.unsplash.com/photo-1592878849122-facb97520f9e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29hdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" height='100' width='50' /></td>
-                <td><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRCkrkia-v58xDf8PKmjOaCBdNmeV532cqE-FwLCcB3ytuCfkXe01i3FwclGhNxMNuGVYnxhceJbLo&usqp=CAc" alt="" height='100' width='50' /></td>
+                <td><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT1onHcFTDLSJtTGKov4vyuYw_SCsRT9FsgVHfomZKTyHA76GQf3H1dlRDxcFS8o0mbDc3O9Y0WNcoP&usqp=CAc" /></td>
+                <td><img src="https://images.unsplash.com/photo-1592878849122-facb97520f9e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29hdHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" /></td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRCkrkia-v58xDf8PKmjOaCBdNmeV532cqE-FwLCcB3ytuCfkXe01i3FwclGhNxMNuGVYnxhceJbLo&usqp=CAc" /></td>
                 <td><img src="data:image/png;base64,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"
-                        alt="" height='100' width='50' /></td>
-                <td><img src="https://media.istockphoto.com/photos/blue-chino-pants-with-brown-leather-belt-isolated-on-white-background-picture-id1149139165?k=6&m=1149139165&s=612x612&w=0&h=ODsqeublv5ZNwra7gn5HtJodybh1Cx9XMIzORjBJk-A=" alt="" height='100'
-                        width='50' /></td>
+                    /></td>
+                <td><img src="https://media.istockphoto.com/photos/blue-chino-pants-with-brown-leather-belt-isolated-on-white-background-picture-id1149139165?k=6&m=1149139165&s=612x612&w=0&h=ODsqeublv5ZNwra7gn5HtJodybh1Cx9XMIzORjBJk-A=" /></td>
             </tr>
             <tr>
-                <th>pullover cardingway</th>
-                <th>Causal coat ,trench rain & performanc</th>
-                <th>Blouses and button-down</th>
-                <th>causal child and athletics</th>
-                <th>wear to work night out</th>
+                <th>pullover cardingway,He will also get up to grab things he forgot, adjust the heat, get a sweatshirt, open the window, etc</th>
+                <th>Causal coat ,trench rain & performanc,Causal coat ,trench rain & performanc</th>
+                <th>Blouses and button-down,Blouses and button-down</th>
+                <th>causal child and athletics,He will also get up to grab things he forgot,</th>
+                <th>wear to work night out,ll also get up to grab things he forgot, adjust the heat</th>
             </tr>
             <tr>
                 <th><a href="https://www.google.com/search?client=firefox-b-d&q=sweatishert+in+amazon">Visit Amazon</a></th>
@@ -89,17 +89,16 @@
 </body>
 <footer>
     <p><address>
-    luzycka Street<br>
-    gliwice,<br>
-    pl 44-100<br>
+    luzycka Street,
+    gliwice,
+    pl 44-100,
     Poland
  </address></p>
     <form>
 
-        <input type="text" id="people" name="people" value="put your message"><br>
+        <input type="text" id="people" name="people" value=""><br>
 
-        <br><br>
-        <input type="submit" value="Submit">
+
     </form>
 </footer>
 
